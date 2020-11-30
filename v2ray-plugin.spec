@@ -27,6 +27,7 @@ suffix=""
 
 os=linux
 arch=amd64
+go get -insecure v2ray.com/core
 
 env CGO_ENABLED=0 GOOS=$os GOARCH=$arch go build -v -ldflags "$LDFLAGS" -gcflags "$GCFLAGS" -o v2ray-plugin
 
