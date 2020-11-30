@@ -1,3 +1,4 @@
 v2ray-plugin*
+!v2ray-plugin.spec
 /bin/
 /.idea/
