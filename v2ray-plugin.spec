@@ -10,7 +10,7 @@ URL:            https://github.com/shadowsocks/v2ray-plugin/
 Source0:        v2ray-plugin-1.3.1.zip
 
 BuildRequires:  git,golang
-Requires:       shadowsocks-libev
+#Requires:       shadowsocks-libev
 
 %description
 Yet another SIP003 plugin for shadowsocks, based on v2ray
@@ -21,16 +21,13 @@ Yet another SIP003 plugin for shadowsocks, based on v2ray
 
 
 %build
-LDFLAGS="-X main.VERSION=$VERSION -s -w"
-GCFLAGS=""
-suffix=""
-
-os=linux
-arch=amd64
-go get -insecure v2ray.com/core
-
-env CGO_ENABLED=0 GOOS=$os GOARCH=$arch go build -v -ldflags "$LDFLAGS" -gcflags "$GCFLAGS" -o v2ray-plugin
-
+#LDFLAGS="-X main.VERSION=$VERSION -s -w"
+#GCFLAGS=""
+#suffix=""
+#os=linux
+#arch=amd64
+#env CGO_ENABLED=0 GOOS=$os GOARCH=$arch go build -v -ldflags "$LDFLAGS" -gcflags "$GCFLAGS" -o v2ray-plugin
+go build -v -o v2ray-plugin
 
 
 

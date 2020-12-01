@@ -7,7 +7,7 @@ SELF=$(readlink -f -- "$0")
 HERE=$(dirname -- "$SELF")
 
 SOURCES="${HERE}"/SOURCES
-SPEC_TEMPLATE="${HERE}"/SPECS/${NAME}.spec.tpl
+SPEC_TEMPLATE="${HERE}"/${NAME}.spec.tpl
 SPEC_FILE="${SPEC_TEMPLATE%%.tpl}"
 
 GIT_VERSION=$("${HERE}"/../scripts/git_version.sh)
