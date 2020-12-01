@@ -6,8 +6,8 @@ Summary:        Yet another SIP003 plugin for shadowsocks, based on v2ray
 Group:          Applications/Internet
 License:        MIT License
 URL:            https://github.com/shadowsocks/v2ray-plugin/
-#Source0:        https://github.com/shadowsocks/v2ray-plugin/archive/v1.3.1.zip
-Source0:        v2ray-plugin-1.3.1.zip
+Source0:        https://github.com/shadowsocks/v2ray-plugin/archive/v1.3.1.zip
+#Source0:        v2ray-plugin-1.3.1.zip
 
 BuildRequires:  git,golang
 #Requires:       shadowsocks-libev
